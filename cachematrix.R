@@ -1,5 +1,15 @@
 ## pair of functions that cache the inverse of a matrix.
-## 
+##test usage:
+##  make a matrix
+##   z<-c(1,3,3,1,4,3,1,3,4)
+##   mt<-matrix(z,3,3)
+##  pass it to makeCacheMatrix
+##   matrix_obj<-makeCacheMatrix(mt)
+##  get its inverse
+##   cacheSolve(matrix_obj)
+##  run it again, the function retrieves the inverse from the cache.
+
+
 
 ## This function creates a special "matrix" object
 ## that can cache its inverse.
@@ -34,3 +44,4 @@ cacheSolve <- function(x, ...) {
       x$setInverse(m)
       m
 }
+
